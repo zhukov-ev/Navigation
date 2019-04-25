@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InformationViewController.swift
 //  Navigation
 //
 //  Created by Евгений Жуков on 24/04/2019.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class InformationViewController: UIViewController {
+    
+    var textOfLabel = ""
+    
+    @IBOutlet var information: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        information.text = textOfLabel
     }
-
-
 }
-
